@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lookshop</title>
-    <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="wrapper">
@@ -102,24 +102,321 @@
                     <a href="" class="cart__link">
                         <i class="material-icons cart__icon">local_grocery_store</i>
                         <span class="cart__amount">0</span>
-                        <span class="cart__price">0 $</span>
+                        <span class="cart__price">0 <span class="currency">$</span></span>
                     </a>
                 </div>
             </div>
         </header>
+
         <main class="main content-padding">
-            <div class="slider"></div>
-            <content class="content">
-                <div class="products">
-                    
+            <h6 class="path">
+                <i class="material-icons path__icon">home</i>&ThickSpace;>&ThickSpace;Women&ThickSpace;>&ThickSpace;Clothes
+            </h6>
+            <div class="slider">
+                <button class="slider__left">
+                    <i class="material-icons slider__arrow">keyboard_arrow_left</i>
+                </button>
+                <div class="img--container">
+                    <img src="img/sliderimg1.png" alt="" class="slider__img">
+                    <img src="img/sliderimg2.png" alt="" class="slider__img">
                 </div>
-                <aside class="side-bar">
-                    <div class="categories"></div>
-                    <div class="on-sale"></div>
-                    <div class="featured-products"></div>
-                </aside>
-            </content>
+                <div class="slider__info">
+                    <h1 class="slider__title">Open heart top</h1>
+                    <span class="slider__price">
+                        <span class="currency">$</span>
+                        13.95
+                    </span>
+                    <p class="slider__descr">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam ipsa eos quam laboriosam ad corrupti nisi. Perferendis reiciendis, quae nam consectetur voluptatem, asperiores libero harum quaerat atque perspiciatis nobis! Incidunt architecto eaque fugiat rem.    
+                    </p>
+                    <button class="slider__btn">
+                        add to cart
+                        <i class="material-icons">add</i>
+                    </button>
+                </div>
+                <button class="slider__right">
+                    <i class="material-icons slider__arrow">keyboard_arrow_right</i>
+                </button>
+            </div>
+            <div class="slider-navigation">
+                <div class="dot" id="slider-dot-1"></div>
+                <div class="dot" id="slider-dot-2"></div>
+                <div class="dot active" id="slider-dot-3"></div>
+                <div class="dot" id="slider-dot-4"></div>
+                <div class="dot" id="slider-dot-5"></div>
+            </div>
+            <content class="content">
+                    <aside class="side-bar">
+                            <div class="side-bar__block">
+                            <h3 class="block__title">categories</h3>
+                                
+                            </div>
+                            <div class="side-bar__block">
+                                <h3 class="block__title">on sale</h3>
+                                <ul class="block__list">
+                                    <li class="block__item">
+                                        <a href="" class="block__link">
+                                            <div class="block-item__img--container">
+                                                <img src="img/productpic.png" alt="" class="block-item__img">
+                                            </div>
+                                            <div class="block-item__descr">
+                                                <h5 class="block-item__title">Basic sunglasses</h5>
+                                                <span class="block-item__price">
+                                                    <span class="currency">$</span>
+                                                    14.95
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="block__item">
+                                        <a href="" class="block__link">
+                                            <div class="block-item__img--container">
+                                                <img src="img/productpic.png" alt="" class="block-item__img">
+                                            </div>
+                                            <div class="block-item__descr">
+                                                <h5 class="block-item__title">Basic sunglasses</h5>
+                                                <span class="block-item__price">
+                                                    <span class="currency">$</span>
+                                                    14.95
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="block__item">
+                                        <a href="" class="block__link">
+                                            <div class="block-item__img--container">
+                                                <img src="img/productpic.png" alt="" class="block-item__img">
+                                            </div>
+                                            <div class="block-item__descr">
+                                                <h5 class="block-item__title">Basic sunglasses</h5>
+                                                <span class="block-item__price">
+                                                    <span class="currency">$</span>
+                                                    14.95
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="side-bar__block">
+                                <h3 class="block__title">featured products</h3>
+                                <ul class="block__list">
+                                    <li class="block__item">
+                                        <a href="" class="block__link">
+                                            <div class="block-item__img--container">
+                                                <img src="img/productpic.png" alt="" class="block-item__img">
+                                            </div>
+                                            <div class="block-item__descr">
+                                                <h5 class="block-item__title">Basic sunglasses</h5>
+                                                <span class="block-item__price">
+                                                    <span class="currency">$</span>
+                                                    14.95
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="block__item">
+                                        <a href="" class="block__link">
+                                            <div class="block-item__img--container">
+                                                <img src="img/productpic.png" alt="" class="block-item__img">
+                                            </div>
+                                            <div class="block-item__descr">
+                                                <h5 class="block-item__title">Basic sunglasses</h5>
+                                                <span class="block-item__price">
+                                                    <span class="currency">$</span>
+                                                    14.95
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="block__item">
+                                        <a href="" class="block__link">
+                                            <div class="block-item__img--container">
+                                                <img src="img/productpic.png" alt="" class="block-item__img">
+                                            </div>
+                                            <div class="block-item__descr">
+                                                <h5 class="block-item__title">Basic sunglasses</h5>
+                                                <span class="block-item__price">
+                                                    <span class="currency">$</span>
+                                                    14.95
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+
+                <div class="page-info">
+                    <div class="sort">
+                        Sort by
+                        <select name="sort-by" id="sort-by" class="sort__select">
+                            <option value="" class="sort__option">New</option>
+                            <option value="" class="sort__option">Popular</option>
+                            <option value="" class="sort__option">Recomended</option>
+                            <option value="" class="sort__option">Hight to low</option>
+                            <option value="" class="sort__option">Low to hight</option>
+                        </select>
+                    </div>
+                    <div class="pages">
+                        Showing&MediumSpace;<span id="products-amount">1-12</span>&MediumSpace;of&MediumSpace;<span id="results-amount">347</span>&MediumSpace;results
+                        <div class="pages__btns">
+                            <button class="pages__btn active">1</button>
+                            <button class="pages__btn">2</button>
+                            <button class="pages__btn">3</button>
+                            <button class="pages__btn"><i class="material-icons pages__arrow">keyboard_arrow_right</i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="product">
+                        <div class="product__img--wrapper">
+                            <img src="img/mainproductpic.png" alt="" class="product__img">
+                        </div>
+                        
+                            <h3 class="product__title">
+                                Gooding shorts
+                            </h3>
+                            <span class="product__price">
+                                <span class="currency">$</span>
+                                79.95
+                            </span>
+                            <button class="product__btn">
+                                add to cart
+                                <i class="material-icons product__btn-icon">add</i>
+                            </button>
+                        
+                    </div>
+                    <div class="product">
+                        <div class="product__img--wrapper">
+                            <img src="img/mainproductpic.png" alt="" class="product__img">
+                        </div>
+                        
+                            <h3 class="product__title">
+                                Gooding shorts
+                            </h3>
+                            <span class="product__price">
+                                <span class="currency">$</span>
+                                79.95
+                            </span>
+                            <button class="product__btn">
+                                add to cart
+                                <i class="material-icons product__btn-icon">add</i>
+                            </button>
+                        
+                    </div>
+                    <div class="product">
+                        <div class="product__img--wrapper">
+                            <img src="img/mainproductpic.png" alt="" class="product__img">
+                        </div>
+                        
+                            <h3 class="product__title">
+                                Gooding shorts
+                            </h3>
+                            <span class="product__price">
+                                <span class="currency">$</span>
+                                79.95
+                            </span>
+                            <button class="product__btn">
+                                add to cart
+                                <i class="material-icons product__btn-icon">add</i>
+                            </button>
+                        
+                    </div>
+                    <div class="product">
+                        <div class="product__img--wrapper">
+                            <img src="img/mainproductpic.png" alt="" class="product__img">
+                        </div>
+                        
+                            <h3 class="product__title">
+                                Gooding shorts
+                            </h3>
+                            <span class="product__price">
+                                <span class="currency">$</span>
+                                79.95
+                            </span>
+                            <button class="product__btn">
+                                add to cart
+                                <i class="material-icons product__btn-icon">add</i>
+                            </button>
+                        
+                    </div>
+                    <div class="product">
+                        <div class="product__img--wrapper">
+                            <img src="img/mainproductpic.png" alt="" class="product__img">
+                        </div>
+                        
+                            <h3 class="product__title">
+                                Gooding shorts
+                            </h3>
+                            <span class="product__price">
+                                <span class="currency">$</span>
+                                79.95
+                            </span>
+                            <button class="product__btn">
+                                add to cart
+                                <i class="material-icons product__btn-icon">add</i>
+                            </button>
+                        
+                    </div>
+                    <div class="product">
+                        <div class="product__img--wrapper">
+                            <img src="img/mainproductpic.png" alt="" class="product__img">
+                        </div>
+                        
+                            <h3 class="product__title">
+                                Gooding shorts
+                            </h3>
+                            <span class="product__price">
+                                <span class="currency">$</span>
+                                79.95
+                            </span>
+                            <button class="product__btn">
+                                add to cart
+                                <i class="material-icons product__btn-icon">add</i>
+                            </button>
+                        
+                    </div>
+                    <div class="product">
+                        <div class="product__img--wrapper">
+                            <img src="img/mainproductpic.png" alt="" class="product__img">
+                        </div>
+                        
+                            <h3 class="product__title">
+                                Gooding shorts
+                            </h3>
+                            <span class="product__price">
+                                <span class="currency">$</span>
+                                79.95
+                            </span>
+                            <button class="product__btn">
+                                add to cart
+                                <i class="material-icons product__btn-icon">add</i>
+                            </button>
+                        
+                    </div>
+                    <div class="product">
+                        <div class="product__img--wrapper">
+                            <img src="img/mainproductpic.png" alt="" class="product__img">
+                        </div>
+                        
+                            <h3 class="product__title">
+                                Gooding shorts
+                            </h3>
+                            <span class="product__price">
+                                <span class="currency">$</span>
+                                79.95
+                            </span>
+                            <button class="product__btn">
+                                add to cart
+                                <i class="material-icons product__btn-icon">add</i>
+                            </button>
+                        
+                    </div>
+                </div>
         </main>
+
         <footer class="footer">
             <div class="footer__pay-systems content-padding">
                 We accept
