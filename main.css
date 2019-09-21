@@ -1,0 +1,425 @@
+/*
+    1. Default (line 6)
+    2. Sub-header
+    3. Main header
+    
+*/
+
+
+/*=============================
+         - Default -
+===============================*/
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex: 1 0 auto;
+}
+
+.content-padding{
+    padding: 0 120px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*=============================
+         - Subheader -
+===============================*/
+.sub-header{
+    height: 30px;
+
+    background-color: #000;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-header__contact{
+    font-size: 11px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-transform: uppercase;
+
+}
+
+.sub-header__tel{
+    text-decoration: none;
+    font-style: 12px;
+    color: #fff;
+}
+
+.sub-header__accout-settings{
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.currency-select{
+    margin-right: auto;
+
+    background: #000;
+    color: #fff;
+    border: none;
+}
+
+.sub-header__account{
+    font-size: 11px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-transform: uppercase;
+    
+    position: relative;
+}
+
+.sub-header__account .account__list{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.sub-header__account:hover > .account__list{
+    display:inherit;
+}
+
+.sub-header__account .account__list .account__item {
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+.account__icon{
+    margin-right: 10px;
+}
+
+.account__list{
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    
+    list-style: none;
+    background-color: #000;
+}
+
+.account__item{
+    padding: 1px 0 1px 5px;
+}
+
+
+.account__item:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.account__item:last-child{
+    padding-top: 3px;
+    border-top: 1px solid #c2c2c2;
+}
+
+.account__item:first-child{
+    margin-top: 10px;
+}
+
+.account__item:hover{
+    background-color: #fff;
+}
+
+.account__item:hover > .account__link{
+    color: #000;
+}
+
+.account__link{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*=============================
+         - Main Header -
+===============================*/
+
+.main-header{
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img{
+    max-width: 200px;
+    margin-right: auto;
+}
+
+.nav-menu__list{
+   width: 500px;
+   margin-right: 75px;
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav-menu__item{
+    margin: 0;
+
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Arial";
+    
+    position: relative; 
+}
+
+.nav-menu__item-text{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu__icon{
+    margin-left: 10px;
+}
+
+.nav-menu__item:hover > .nav-menu__sub-list{
+    display: inherit;
+}
+
+.nav-menu__sub-list{
+    width: 100%;
+
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.nav-menu__sub-item{
+    width: 100%;
+    padding: 2px 0 2px 5px;
+
+    border: 1px solid #c2c2c2;
+    border-top: none; 
+
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+.nav-menu__sub-item:hover{
+    background: #c2c2c2;
+}
+
+.nav-menu__sub-item:hover > .nav-menu__link{
+    color: #fff;
+}
+
+.nav-menu__link{
+    text-decoration: none;
+    color: #000;
+}
+
+.cart__link{
+    text-decoration: none;
+    color: #000;
+
+    display: flex;
+    align-items: center;
+}
+
+.cart__amount{
+    margin: 0 10px 0 10px;
+    padding-right: 10px;
+    border-right: 1px solid #c2c2c2;
+}
+
+
+
+/*=============================
+         - Footer -
+===============================*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Stick to bottom */
+    flex: 0 0 auto;
+}
+
+.footer__pay-systems{
+    height: 60px;
+    margin: 0;
+
+    background-color: #F7F7F7;
+    color: #414141;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-systems-img{
+    margin-left: 20px;
+}
+
+.footer__menu{
+    height: 200px;
+
+    background-color: #EDEDED;
+}
+
+.footer__menu-list{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu__item{
+    margin-top: 30px;
+
+    color: #544f4d;
+    font-family: "Arial", sans-serif;
+
+    display: inline-block;
+}
+
+.menu__item-header{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+
+    text-align-last: left;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.menu__item-list{
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.menu__item-elem{
+
+}
+.menu__item-link{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: #544f4d;
+    font-family: "Arial";
+}
+
+.menu__item-link:hover{
+    color: #000;
+}
+
+.menu__item-list--socials{
+    width: 140px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__item-elem--socials{
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    display: inline-block;
+}
+
+.menu__item-elem--socials:hover{
+    opacity: .8;
+}
+
+.footer__contacts{
+    height: 70px;
+    margin: 0;
+
+    background-color: #000;
+    color: #8d8d8d;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    height: 100%;
+}
+
+.nav__list{
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav__item:not(:last-child){
+    margin-right: 10px;
+
+    border-right: 1px solid #8d8d8d;
+}
+
+.nav__item{
+    padding-right: 10px;
+    
+    display: inline-block;
+}
+
+.nav__link{
+    text-decoration: none;
+    
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    color: #8d8d8d;
+    line-height: 20px;
+}
+
+.nav__link:hover{
+    color: #fff;
+}
+
+.footer__rights{
+    text-align: right;
+    line-height: 18px;
+    font-size: 11px;
+}
