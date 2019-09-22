@@ -1,7 +1,12 @@
 /*
-    1. Default (line 6)
-    2. Sub-header
-    3. Main header
+    1. Default (line 18)
+    2. Sub Header (line 70) 
+    3. Main header (line 190)
+    4. Slider (line 294)
+    5. Aside (line 453)
+    6. Page-info
+    7. Products
+    8. Footer
     
 */
 
@@ -55,8 +60,12 @@ ul{
     z-index: 1;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*=============================
-         - Subheader -
+         - Sub Header -
 ===============================*/
 .sub-header{
     height: 30px;
@@ -289,15 +298,19 @@ ul{
 
     font-size: 11px;
     letter-spacing: 0px;
-    color: #7a706d;
     font-family: "Arial";
-
+    color: #7a706d;
     display: flex;
     align-items: center;
 }
 
+.path__link{
+    color: #7a706d;
+}
+
 .path__icon{
     font-size: 15px;
+    color: #7a706d;
 }
 
 .slider{
@@ -429,15 +442,25 @@ ul{
     border-radius: 50%;
 }
 
+
 .dot.active{
     background: #FD916D;
+}
+
+.dot:hover{
+    background: rgb(209, 209, 209);
 }
 
 /*=============================
          - Aside -
 ===============================*/
+.content{
+    display: block;
+}
+
 .side-bar{
     width: 230px;
+    height: 100%;
     margin-left: 20px;
 
     float: right;
@@ -590,6 +613,14 @@ ul{
     background: #c2c2c2;
 }
 
+.page-info--bottom{
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 /*=============================
          - Products -
 ===============================*/
@@ -608,11 +639,14 @@ ul{
     font-size: 5vw;
     background: #F9F5F4;
     text-align: center;
+}
 
+.product__link{
+    text-decoration: none;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .product:hover{
@@ -700,6 +734,23 @@ ul{
 .product__btn-icon{
     margin-left: 2px;
     font-size: 18px
+}
+
+.product__price[data-descr]{
+    position: relative;
+}
+
+.product__price[data-descr]::after{
+    content: attr(data-descr);
+
+    color: red;
+    font-size: 0.6em;
+    text-decoration: line-through;
+
+    position: absolute;
+    right: -5px;
+    top: 0;
+    transform: translateX(100%);
 }
 
 /*=============================
@@ -866,4 +917,9 @@ ul{
     text-align: right;
     line-height: 18px;
     font-size: 11px;
+}
+
+.social-img{
+    width: 35px;
+    height: 35px;
 }
