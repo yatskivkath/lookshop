@@ -725,6 +725,7 @@ a{
     justify-content: center;
 
     transition: transform .1s linear;
+
 }
 
 .product__btn:hover{
@@ -735,6 +736,33 @@ a{
     margin-left: 2px;
     font-size: 18px
 }
+
+.print-text{
+    margin-top: 10px;
+
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #373737;
+    font-family: "Arial";
+
+    display: none;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+@media print {
+    .product__btn{
+        display: none;
+    }
+
+    .print-text{
+        display: inline-block;
+    }
+
+}
+
 
 .product__price[data-descr]{
     position: relative;
