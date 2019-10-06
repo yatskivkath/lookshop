@@ -1,0 +1,260 @@
+
+@media screen and (max-width: 1100px){
+    .menu{
+        display: none;
+    }
+
+    .menu-btn{
+        display: flex;
+        align-items: center;
+    }
+
+    .side-bar{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .slider{
+        position: relative;
+    }
+
+    .img--container{
+        width: 100%;
+        padding-left: 25%;
+
+        position: relative;
+    }
+
+    .img--container::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .5);
+
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .slider__info{
+        position: absolute;
+        left: 70px;
+    }
+
+
+    .slider__title{
+        margin-top: 50px;
+    }
+
+    .footer__menu{
+        height: auto;
+    }
+
+   .footer__menu-list{
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+
+   .menu__item{
+       flex-basis: 49%;
+   }
+
+   .menu__item:not(:last-child){
+       max-width: 100px;
+   }
+
+   .menu__item:last-child{
+       flex: 1 0 60%;
+   }
+
+   .menu__item:last-child > .menu__item-header{
+       display: none;
+   }
+
+   .menu__item-list--socials{
+       width: 100%;
+        margin: 0;
+
+        justify-content: space-between;
+        flex-wrap: nowrap;
+   }
+}
+
+@media screen and (max-width: 747px){
+    .slider__info{
+        width: 200px;
+    }
+
+    .page-info{
+        height: 80px;
+    }
+
+    .pages{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+    .pages-text{
+        margin-bottom: 5px;
+    }
+    
+    .pages__btns{
+        margin-left: 0;
+    }
+    
+    .pages__btn:first-child{
+        margin-left: 0;
+    }
+    
+    .page-info--bottom .pages{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .page-info--bottom .pages__btns{
+        margin-left: 20px;
+
+        flex-direction: row;
+    }
+
+    .footer__pay-systems{
+        height: 80px;
+    }
+
+    .pay-systems{
+        max-width: 300px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .pay-systems img{
+        margin-right: 5px;
+        margin-bottom: 3px;
+    }
+
+}
+
+
+@media screen and (max-width: 694px){
+    .product__img{
+        transform: scale(1.4) translateY(15%) translateX(2%);
+
+    }
+}
+
+@media screen and (max-width: 650px){
+    .content-padding{
+        padding: 0 75px 0 75px;
+    }
+    
+    .main{
+        padding-top: 130px;
+    }
+
+    .sub-header__accout-settings{
+        width: 150px;
+    }
+
+    .sub-header__contact{
+        max-width: 100px;
+    }
+
+    .menu__item:not(:last-child){
+        max-width: 200px;
+    }
+
+    .menu__item:nth-child(2n),
+    .menu__item:nth-child(2n) .menu__item-list
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__item:nth-child(2n) .menu__item-header,
+    .menu__item:nth-child(2n) .menu__item-elem{
+        margin-left: auto;
+        display: inline-block;
+    }
+
+    .footer__contacts{
+        height: 100px;
+    }
+
+    .nav__list{
+        max-width: 250px;
+
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 495px){
+    body{
+        display: block;
+    }
+
+    .logo-img{
+        max-width: 120px;
+
+        margin-right: 0;
+    }
+    
+    .menu-btn{
+        margin-left: 0;
+    }
+
+    .slider__right{
+        display: none;
+    }
+
+    .slider__left{
+        display: none;
+    }
+
+    .slider__info{
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .content-padding{
+        padding: 0 30px 0 30px;
+    }
+
+    .main{
+        padding-top: 130px;
+    }
+
+    .logo-img{
+        max-width: 150px;
+    }
+
+    .menu__item{
+        flex: 1 0 100%;
+    }
+
+    .menu__item:not(:last-child),
+    .menu__item:not(:last-child) .menu__item-list
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__item:not(:last-child) .menu__item-header,
+    .menu__item:not(:last-child) .menu__item-elem{
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    .cart__amount{
+        margin: 0 5px 0 5px;
+        padding-right: 5px;
+    }
+
+    .footer__contacts{
+        height: 150px;
+    }
+}
