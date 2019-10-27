@@ -99,11 +99,31 @@
                 </ul>
             </nav>
             <div class="cart">
-                <a href="" class="cart__link">
+                <button id="cartBtn" class="cart__link">
                     <i class="material-icons cart__icon">local_grocery_store</i>
                     <span class="cart__amount">0</span>
                     <span class="cart__price">0 <span class="currency">$</span></span>
-                </a>
+                </button>
+
+                <div id="cartModal" class="cart__modal">
+
+                    <div class="modal__content">
+                      <div class="modal__header">
+                        <span class="modal__close">&times;</span>
+                        <h2>Your cart</h2>
+                      </div>
+                      <div class="modal__wrapper">
+                          <div class="modal__body">
+                            Cart is empty.
+                          </div>
+                          <div class="modal__footer">
+                            <h3>Total: 0<span class = "currency">$</span></h3>
+                          </div>
+
+                      </div>
+                    </div>
+                  
+                  </div>
             </div>
             <button class = "menu-btn">
                     <i class="material-icons menu-btn__icon">
@@ -301,7 +321,7 @@
                                 <span class="currency">$</span>
                                 79.95
                             </span>
-                            <button class="product__btn">
+                            <button class="product__btn" type="button">
                                 add to cart
                                 <i class="material-icons product__btn-icon">add</i>
                             </button>
@@ -320,7 +340,7 @@
                                 <span class="currency">$</span>
                                 69.95
                             </span>
-                            <button class="product__btn">
+                            <button class="product__btn"  type="button">
                                 add to cart
                                 <i class="material-icons product__btn-icon">add</i>
                             </button>
@@ -346,7 +366,7 @@
                                 <span class="currency">$</span>
                                 69.95
                             </span>
-                            <button class="product__btn">
+                            <button class="product__btn" type="button">
                                 add to cart
                                 <i class="material-icons product__btn-icon">add</i>
                             </button>
@@ -372,7 +392,7 @@
                                 <span class="currency">$</span>
                                 79.95
                             </span>
-                            <button class="product__btn">
+                            <button class="product__btn" type="button">
                                 add to cart
                                 <i class="material-icons product__btn-icon">add</i>
                             </button>
@@ -398,7 +418,7 @@
                                 <span class="currency">$</span>
                                 79.95
                             </span>
-                            <button class="product__btn">
+                            <button class="product__btn" type="button">
                                 add to cart
                                 <i class="material-icons product__btn-icon">add</i>
                             </button>
@@ -424,7 +444,7 @@
                                 <span class="currency">$</span>
                                 79.95
                             </span>
-                            <button class="product__btn">
+                            <button class="product__btn" type="button">
                                 add to cart
                                 <i class="material-icons product__btn-icon">add</i>
                             </button>
@@ -450,7 +470,7 @@
                                 <span class="currency">$</span>
                                 79.95
                             </span>
-                            <button class="product__btn">
+                            <button class="product__btn" type="button" type="button">
                                 add to cart
                                 <i class="material-icons product__btn-icon">add</i>
                             </button>
@@ -476,7 +496,7 @@
                                 <span class="currency">$</span>
                                 69.95
                             </span>
-                            <button class="product__btn">
+                            <button class="product__btn" type="button">
                                 add to cart
                                 <i class="material-icons product__btn-icon">add</i>
                             </button>

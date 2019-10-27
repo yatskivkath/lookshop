@@ -2,11 +2,11 @@
     1. Default (line 18)
     2. Sub Header (line 70) 
     3. Main header (line 190)
-    4. Slider (line 307)
-    5. Aside (line 470)
-    6. Page-info (line 554)
-    7. Products (line 641)
-    8. Footer (line 801)
+    4. Slider (line 308)
+    5. Aside (line 471)
+    6. Page-info (line 555)
+    7. Products (line 642)
+    8. Footer (line 802)
     
 */
 
@@ -62,6 +62,10 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+button{
+    cursor: pointer;
 }
 
 /*=============================
@@ -287,7 +291,8 @@ a{
 }
 
 .cart__link{
-    text-decoration: none;
+    background: transparent;
+    border: none;
     color: #000;
 
     display: flex;
@@ -298,6 +303,129 @@ a{
     margin: 0 10px 0 10px;
     padding-right: 10px;
     border-right: 1px solid #c2c2c2;
+}
+
+.cart__modal {
+    display: none; 
+    position: fixed; 
+    z-index: 5; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*=============================
+         - Modal -
+===============================*/
+
+.modal__content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    border: 5px solid #c5c5c5;
+    width: 50%;
+    height: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1;}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.modal__close {
+    color: white;
+    float: right;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__header {
+    padding: 2px 16px;
+    background-color: #d3d3d3;
+    color: #000;
+}
+
+.modal__wrapper{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+.modal__body {
+    padding: 15px 16px;
+    color: #8d8d8d;
+
+    flex-grow: 1;
+}
+
+.modal__footer {
+    padding: 5px 16px;
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-100%);
+    border: 1px solid #c5c5c5;
+
+    flex-shrink: 0;
+}
+
+.cartItem{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.cartItem__name{
+    cursor: pointer;
+    font-size: 32px;
+    color: #8d8d8d;
+    flex: 1 0 auto;
+}
+
+.cartItem__name:hover{
+    color: #5e5e5e;
+}
+
+.cartItem__amount-bar{
+    margin-right: 25px;
+    color: #000;
+}
+
+.cartItem__price{
+    color: #000;
+}
+
+.cartItem__close{
+    margin-left: 5px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
 }
 
 
