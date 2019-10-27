@@ -2,11 +2,12 @@
     1. Default (line 18)
     2. Sub Header (line 70) 
     3. Main header (line 190)
-    4. Slider (line 308)
-    5. Aside (line 471)
-    6. Page-info (line 555)
-    7. Products (line 642)
-    8. Footer (line 802)
+    4. Modal ( line 325 )
+    5. Slider (line 452)
+    6. Aside (line 615)
+    7. Page-info (line 699)
+    8. Products (line 786)
+    9. Footer (line 946)
     
 */
 
@@ -380,12 +381,15 @@ button{
 
 .modal__body {
     padding: 15px 16px;
+    padding-bottom: 50px;
     color: #8d8d8d;
+    overflow: scroll;
 
     flex-grow: 1;
 }
 
 .modal__footer {
+    height: 70px;
     padding: 5px 16px;
     background-color: #fff;
     color: #000;
@@ -399,6 +403,19 @@ button{
     display: flex;
     justify-content: stretch;
     align-items: center;
+    margin-bottom: 10px;
+}
+
+.cartItem__img--wrapper{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.cartItem__img{
+    width: 100%;
+    transform: scale(3);
+    /* height: 100%; */
 }
 
 .cartItem__name{
